@@ -154,15 +154,6 @@
     font-family: "Raleway", sans-serif;
   }
 
-  footer {
-    font-size: 11px;
-    text-align: center;
-  }
-
-  footer a {
-    color: hsl(228, 45%, 44%);
-  }
-
   main {
     margin: 20% auto;
     display: flex;
@@ -210,7 +201,7 @@
     margin: 42px auto;
     width: 60%;
     height: 110px;
-
+    border-radius: 10px;
     margin-bottom: 20px;
     background-color: hsl(228, 56%, 26%);
   }
@@ -271,17 +262,18 @@
   }
 
   .notification {
-    position: relative;
-    top: 25px;
-    left: 80px;
-    width: 35%;
+    position: absolute;
+    top: 205px;
+    left: 702px;
+    width: 10%;
     padding: 10px;
-
+    height: 80px;
     border-radius: 10px;
     background-color: white;
     color: black;
     font-weight: 700;
     font-size: xx-large;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 68%, 92% 50%, 0% 50%);
   }
 
   .notification span {
@@ -289,5 +281,174 @@
     top: -5px;
     font-size: x-small;
     color: hsl(229, 7%, 55%);
+  }
+
+  footer {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  footer a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  .chatbox {
+    background: red;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    /* border-top-left-radius:8px ;
+    border-top-right-radius:8px ;
+    border-bottom-right-radius:8px ; */
+  }
+}
+
+@media screen and (width: 1440px) {
+  body {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(/images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom 0px right 0px;
+    color: hsl(243, 100%, 93%);
+    font-family: "Raleway", sans-serif;
+  }
+
+  main {
+    margin: 20% auto;
+    display: flex;
+    width: 70%;
+    height: 180px;
+    box-sizing: border-box;
+  }
+
+  .containerFylo {
+    border-radius: 5px 100px 5px 5px;
+    background-color: hsl(228, 56%, 26%);
+    height: 150px;
+    width: 30%;
+
+    margin: 2px auto;
+  }
+
+  .containerFylo .Fylo img {
+    width: 40%;
+    height: 30px;
+    padding: 0px;
+    background-color: inherit;
+  }
+
+  .Fylo {
+    margin-top: 5px;
+    margin-left: 40px;
+  }
+
+  .containerFylo img:nth-child(2) {
+    margin-left: 40px;
+  }
+
+  img {
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: hsl(229, 57%, 11%);
+  }
+
+  .containerData {
+    margin: 42px auto;
+    width: 60%;
+    height: 110px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: hsl(228, 56%, 26%);
+  }
+
+  .container {
+    margin: 2px auto;
+    width: 90%;
+    height: 15px;
+    border-radius: 8px;
+    background-color: hsl(229, 30%, 18%);
+  }
+
+  .innerContainer {
+    width: 65%;
+    height: 13px;
+    background: linear-gradient(
+      to right,
+      hsl(6, 100%, 80%),
+      hsl(335, 100%, 65%)
+    );
+
+    border-radius: 8px;
+    margin-top: 4px;
+    margin-bottom: -4px;
+  }
+
+  .dot {
+    background-color: rgb(253, 249, 249);
+    width: 10%;
+    height: 13px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 92%;
+  }
+
+  .containerData p:first-child {
+    text-align: left;
+    font-size: x-small;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-left: 5%;
+  }
+
+  span {
+    font-weight: 700;
+  }
+
+  .containerData :nth-child(3) {
+    margin-top: 0px;
+    text-align: left;
+    margin-left: 5%;
+    font-weight: 400;
+    font-size: x-small;
+  }
+
+  .containerData :nth-child(3) span {
+    margin-left: 84%;
+  }
+
+  .notification {
+    position: absolute;
+    top: 300px;
+    left: 1002px;
+    width: 10%;
+    padding: 10px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: xx-large;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 68%, 92% 50%, 0% 50%);
+  }
+
+  .notification span {
+    position: relative;
+    top: -5px;
+    font-size: x-small;
+    color: hsl(229, 7%, 55%);
+  }
+
+  footer {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  footer a {
+    color: hsl(228, 45%, 44%);
   }
 }
